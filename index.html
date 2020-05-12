@@ -6,30 +6,30 @@
     <title>BEM practice</title>
 </head>
 <body>
-    <main>
-        <article>
-            <div>
-                <img src="" alt="Zewnętrzne Zdjęcie hotelu Grano Apartments">
-                <p>
+    <main class="main">
+        <article class="offer">
+            <div class="offer__picture-box">
+                <img src="" class="offer__photo" alt="Zewnętrzne Zdjęcie hotelu Grano Apartments">
+                <p class="offer__discount">
 
                 </p>
                 <!-- <div></div> grafika dziubek, po tekście.-->
             </div>
-            <div>
-            <h1>Grano Apartments Nowa Motława SPA &amp; Wellness★★★</h1>
-            <address>Gdańsk, Wybrzeże</address>
-            <p>Zarezerwowało już 10 użytkowników</p>
-            <p><span>✔</span> <strong>dostęp do basenu wewnętrznego</strong></p>
+            <div class="offer__description">
+            <h1 class="offer__name">Grano Apartments Nowa Motława SPA &amp; Wellness★★★</h1>
+            <address class="offer__adress">Gdańsk, Wybrzeże</address>
+            <p class="offer_conting">Zarezerwowało już 10 użytkowników</p>
+            <p class="offer__bonus"><span class="offer__bonus--icon">✔</span> <strong>dostęp do basenu wewnętrznego</strong></p>
         </div>
-        <div> <!-- tutaj będzie lekkie dło + hover tła --><img src="" alt="ikona serca"></div>
-        <p><!-- Ikona like z FB --> <span>8.6/10</span></p>
-        <p>Bardzo dobry</p>
+        <div class="offer__favorite"> <!-- tutaj będzie lekkie dło + hover tła --><img class="offer__favorite--icon" src="" alt="ikona serca"></div>
+        <p class="offer__rate"><!-- Ikona like z FB --> <span>8.6/10</span></p>
+        <p class="offer__rate--description">Bardzo dobry</p>
         </div>
 
-        <div>
-            <p><span>od 370zł </span>od <span>139</span> zł</p>
-            <p>cena za noc dla 2 osób</p>
-            <button>Wybierz</button>
+        <div class="offer__cta">
+            <p class="offer__price"><span class="offer__price--before">od 370zł </span>od <span class="offer__price--special">139</span> zł</p>
+            <p class="offer__price--details">cena za noc dla 2 osób</p>
+            <button class="offer__button">Wybierz</button>
         </div>
 
         </article>
