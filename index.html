@@ -1,39 +1,58 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BEM practice</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
+
 <body>
     <main class="main">
         <article class="offer">
-            <div class="offer__picture-box">
-                <img src="" class="offer__photo" alt="Zewnętrzne Zdjęcie hotelu Grano Apartments">
-                <p class="offer__discount">
+            <div class="offer__background">
+                <div class="offer__picture-box">
+                    <img class="offer__photo"
+                        src="https://cdn.travelist.pl/file/trvimages/hotels/3094/nowa-motlawa-spa-wellness_101996_list_s_300x160.jpg"
+                        alt="Zewnętrzne Zdjęcie hotelu Grano Apartments">
+                    <p class="offer__discount">
+                        -63%
+                    </p>
+                    <!-- <div></div> grafika dziubek, po tekście.-->
+                </div>
+                <div class="offer__description">
+                    <h1 class="offer__name">Grano Apartments Nowa Motława SPA &amp; Wellness★★★</h1>
+                    <address class="offer__adress">Gdańsk, Wybrzeże</address>
+                    <p class="offer_conting">Zarezerwowało już 10 użytkowników</p>
+                    <p class="offer__bonus"><span class="offer__bonus offer__bonus--icon">✔</span> <strong>dostęp do
+                            basenu
+                            wewnętrznego</strong></p>
+                </div>
+                <div class="offer__favorite">
+                    <!-- tutaj będzie lekkie dło + hover tła -->
+                    <div class="offer__favorite--background">
+                        <div class="offer__favorite--icon"></div>
+                    </div>
+                    <div class="offer__ratings">
+                        <p class="offer__rate">
+                            <img class="like-icon" src="https://pl.seaicons.com/wp-content/uploads/2015/10/Like-icon.png" alt="Ikona lubię to z facebook'a"> <span>8.6/10</span></p>
+                        <p class="offer__rate--description">Bardzo dobry</p>
+                    </div>
+                </div>
 
-                </p>
-                <!-- <div></div> grafika dziubek, po tekście.-->
+                <div class="offer__cta">
+                    <p class="offer__price"><span class="offer__price--before">od 370zł </span>od <span
+                            class="offer__price--special">139</span> zł</p>
+                    <p class="offer__price--details">cena za noc dla 2 osób</p>
+                    <button class="offer__button">Wybierz</button>
+                </div>
             </div>
-            <div class="offer__description">
-            <h1 class="offer__name">Grano Apartments Nowa Motława SPA &amp; Wellness★★★</h1>
-            <address class="offer__adress">Gdańsk, Wybrzeże</address>
-            <p class="offer_conting">Zarezerwowało już 10 użytkowników</p>
-            <p class="offer__bonus"><span class="offer__bonus--icon">✔</span> <strong>dostęp do basenu wewnętrznego</strong></p>
-        </div>
-        <div class="offer__favorite"> <!-- tutaj będzie lekkie dło + hover tła --><img class="offer__favorite--icon" src="" alt="ikona serca"></div>
-        <p class="offer__rate"><!-- Ikona like z FB --> <span>8.6/10</span></p>
-        <p class="offer__rate--description">Bardzo dobry</p>
-        </div>
-
-        <div class="offer__cta">
-            <p class="offer__price"><span class="offer__price--before">od 370zł </span>od <span class="offer__price--special">139</span> zł</p>
-            <p class="offer__price--details">cena za noc dla 2 osób</p>
-            <button class="offer__button">Wybierz</button>
-        </div>
 
         </article>
     </main>
-    
+
 </body>
+
 </html>
